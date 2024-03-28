@@ -19,27 +19,33 @@
 
                 while($line = fgetcsv($f)){
                     print '<div class="man">'; 
-                    echo '<h1 class="name"><span>';
-                    print_r($line[0]);
-                    echo '</span></h1>';
-                    echo '<div class="omoide baloon">';
-                    echo '<h2>一番の思い出は?</h2>';
-                    echo '<div class="text">';
-                    print_r($line[1]);
-                    echo '</div>';
-                    echo '</div>';
-                    echo '<div class="sukinatokoro baloon">';
-                    echo '<h2>好きなところは?</h2>';
-                    echo '<div class="text">';
-                    print_r($line[2]);
-                    echo '</div>';
-                    echo '</div>';
-                    echo '<div class="episode baloon">';
-                    echo '<h2>おのろけエピソード</h2>';
-                    echo '<div class="text">';
-                    print_r($line[3]);
-                    echo '</div>';
-                    echo '</div>';
+                        echo '<h1 class="name"><span>';
+                        print_r($line[0]);
+                        echo '</span></h1>';
+                    if($line[1] == !""){
+                        echo '<div class="omoide baloon">';
+                        echo '<h2>一番の思い出は?</h2>';
+                        echo '<div class="text">';
+                        print_r($line[1]);
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                    if($line[2] == !""){
+                        echo '<div class="sukinatokoro baloon">';
+                        echo '<h2>好きなところは?</h2>';
+                        echo '<div class="text">';
+                        print_r($line[2]);
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                    if($line[3] == !""){
+                        echo '<div class="episode baloon">';
+                        echo '<h2>おのろけエピソード</h2>';
+                        echo '<div class="text">';
+                        print_r($line[3]);
+                        echo '</div>';
+                        echo '</div>';
+                    }
                     echo '</div>';
                 }
                 // echo $aryCsv;

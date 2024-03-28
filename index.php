@@ -16,15 +16,15 @@
         <div class="scroll_bar">
             <div id="output">
                 <form action="write.php" method="post">
-                    <span class="q">パートナーの名前</span>
-                    <input class="a" type="text" name="name"><br>
-                    <span class="q">一番の思い出は?</span>
+                    <p class="q">パートナーの名前<span class="require">*</span></p>
+                    <input class="a" type="text" name="name" required="required"><br>
+                    <p class="q">一番の思い出は?</p>
                     <textarea class="a" name="omoide" cols="30" rows="4"></textarea>
 
                     <br>
-                    <span class="q">好きなところは?</span>
+                    <p class="q">好きなところは?</p>
                     <textarea class="a" name="sukinatokoro" cols="30" rows="4"></textarea>
-                    <span class="q">おのろけエピソード</span>
+                    <p class="q">おのろけエピソード</p>
                     <textarea class="a" name="episode" cols="30" rows="5"></textarea>
                     <button class="btn_submit" type="submit">送信する</button>
                 </form>

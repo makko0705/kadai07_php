@@ -137,7 +137,7 @@ body {
   width: 290px;
   height: 468px;
   background-size: 100% 100%;
-  padding: 20px 30px;
+  padding: 30px;
   box-sizing: border-box;
   position: relative;
 }
@@ -151,8 +151,6 @@ body {
   text-align: center;
   font-size: 15px;
   margin-bottom: 30px;
-  position: relative;
-  top: 402px;
 }
 .man .name span {
   background: #D3EDF9;

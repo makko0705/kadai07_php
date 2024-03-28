@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”icon” type=”image/png” href=“/img/favicon.png”>
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,11 +16,9 @@
         <div class="slide">
             <?php
                 $f = fopen("data.csv", "r");
-                //まずは... whileの中で4件でてる状態にする
-                //オブジェクトの配列の作り方 htmlとjsでphpの変数の出力の仕方
-                //echoを変数に変える タグをいれるための変数を作ってwhile文をまわして終わってから作った変数をhtml出力をする
+
                 while($line = fgetcsv($f)){
-                    print '<div class="man">'; //echoとprint_rは使い方が違う var_dumpとおんなじような使い方 確認するためのやつ
+                    print '<div class="man">'; 
                     echo '<h1 class="name"><span>';
                     print_r($line[0]);
                     echo '</span></h1>';
@@ -44,6 +43,7 @@
                     echo '</div>';
                 }
                 // echo $aryCsv;
+                fclose($f);
             ?>
         </div>
     </div>

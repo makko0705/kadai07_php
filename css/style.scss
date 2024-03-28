@@ -1,0 +1,228 @@
+$color01:#D3EDF9;
+$color02:#FBE3F1;
+$color03:#E2DFEF;
+$color04:#E8F0C5;
+
+$bg_color :#FBE3F1;
+$phone_color :#fff;
+$phone_shadow :#a891a7;
+$main_color:#62738C;
+.logo {
+    width: 72px;
+    margin: 0 auto 30px;
+    img {
+        width: 100%;
+    }
+}
+input {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+}
+.scroll_bar{
+    overflow-y: scroll;
+    width: 100%px;
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    height: 442px;
+    padding: 0 12px 0px 0;
+
+ }
+ .scroll_bar::-webkit-scrollbar{
+    width: 10px;
+ }
+ .scroll_bar::-webkit-scrollbar-track{
+    background-color: #eee;
+ }
+ .scroll_bar::-webkit-scrollbar-thumb{
+    background-color: rgba($main_color,.6);
+ }
+
+
+
+.q {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: $main_color;
+}
+.page_write {
+    .a {
+        background: rgba($main_color,.2);
+        border-radius: 6px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+        padding: 6px 11px;
+        box-sizing: border-box;
+        }    
+}
+.btn_submit {
+    width: 100%;
+    background: $main_color;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+body {
+    background: $bg_color;
+    padding: 60px;
+    font-size: 14px;
+}
+#phone {
+    background: rgba($phone_color,.6);
+    border: 2px solid $phone_color;
+    border-radius: 29px;
+    padding: 51px 22px 55px;
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+    &:before {
+        position: absolute;
+        right: 30px;
+        top: 17px;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius:5px;
+        background: $phone_color;
+    }
+    &:after {
+        position: absolute;
+        left: 50%;
+        bottom: 16px;
+        content: "";
+        width: 64px;
+        height: 26px;
+        border-radius:13px;
+        background: $phone_color;
+        margin: 0 0 0 -32px;
+    }
+}
+#screen {
+    background: $phone_color;
+    box-shadow: 0px 0px 10px rgba($phone_shadow,.26);
+    padding:34px 24px 24px;
+    height: 522px;
+    &:before {
+        position: absolute;
+        right: 60px;
+        top: 17px;
+        content: "";
+        width: 56px;
+        height: 10px;
+        border-radius:5px;
+        background: $phone_color;
+    }
+}
+.man {
+    background:url("../img/man01.png");
+    background-repeat: no-repeat;
+    background-size:cover !important;
+    width: 290px;
+    height: 468px;
+    background-size: 100% 100%;
+    padding:20px 30px;
+    box-sizing: border-box;
+    position: relative;
+    h2 {
+        font-weight: bold;
+        font-size: 12px;
+        color: $main_color;
+        margin:0 0 5px;
+    }
+    .name {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 30px;
+        position: relative;
+        top: 402px;
+        span {
+            background: $color01;
+            border-radius: 30px;
+            padding: 10px 20px;
+            display: inline-block;    
+        }
+    }
+    .baloon {
+        border: 2px solid $color01;
+        background: rgba($color: #ffffff, $alpha: .5);
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 14px;
+        line-height: 1.4;
+    }
+}
+.man:nth-child(3n-1) {
+    background:url("../img/man02.png") no-repeat;
+    background-size:cover !important;
+    .name {
+        span {
+            background: $color02;
+        }
+    }
+    .baloon {
+        border: 2px solid $color02;
+        background: rgba($color: #ffffff, $alpha: .5);
+    }
+}
+.man:nth-child(3n-2) {
+    background:url("../img/man03.png") no-repeat;
+    background-size:cover !important;
+    .name {
+        span {
+            background: $color03;
+        }
+    }
+    .baloon {
+        border: 2px solid $color03;
+        background: rgba($color: #ffffff, $alpha: .5);
+    }
+}
+.slide {
+    position: relative;
+}
+.slick-prev.slick-arrow {
+    background:url("../img/arrow.png") no-repeat;
+    text-indent: 100;
+    border: none;
+    width: 73px;
+    height: 18px;
+    transform: scale(-1, 1);
+    position:absolute;
+
+    z-index: 100000;
+    top: 434px;
+    margin-left: 10px;
+}
+.slick-next.slick-arrow {
+    background:url("../img/arrow.png") no-repeat;
+    text-indent: 100;
+    border: none;
+    width: 73px;
+    height: 18px;
+    position:absolute;
+
+    z-index: 100000;
+    top: 434px;
+    margin-left: 230px;
+
+}

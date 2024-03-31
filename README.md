@@ -5,7 +5,7 @@ kadai07 のろけメーカー♡
 -恋人の好きなところを記入してみんなに見てもらえるアプリです
 
 ## ③DEMO
-https://chanmaki.sakura.ne.jp/kadai07_php/read.php
+https://chanmaki.sakura.ne.jp/kadai07_php/index.php
 
 ## ④工夫した点・こだわった点
 -UI 実務で使えそうなデザインを心がけました
